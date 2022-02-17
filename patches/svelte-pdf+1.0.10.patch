@@ -1,0 +1,170 @@
+diff --git a/node_modules/svelte-pdf/src/PdfViewer.svelte b/node_modules/svelte-pdf/src/PdfViewer.svelte
+index 2457edd..17f4d65 100644
+--- a/node_modules/svelte-pdf/src/PdfViewer.svelte
++++ b/node_modules/svelte-pdf/src/PdfViewer.svelte
+@@ -278,7 +278,7 @@
+     border-right-width: 0px;
+     border-bottom-width: 1px;
+     border-left-width: 0px;
+-    border-color: #4fd1c5;
++    border-color: #2e2e2e;
+     border-style: dotted;
+     margin-bottom: 0.75rem;
+     padding-top: 0.5rem;
+@@ -299,6 +299,33 @@
+     border-right-width: 1px;
+     cursor: pointer;
+   }
++  .previous-next-container {
++      position: fixed;
++      bottom: 0;
++      width: 100%;
++      display: flex;
++      margin-left: auto;
++      margin-right: auto;
++      justify-content: center;
++    }
++    #previous-page {
++      flex: 1;
++      display: block;
++      justify-content: center;
++      margin-right: 50px;
++      margin-bottom: 25px;
++      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
++      0 4px 6px -2px rgba(0, 0, 0, 0.05);
++    }
++    #next-page {
++      flex: 2;
++      display: block;
++      justify-content: center;
++      margin-left: 50px;
++      margin-bottom: 25px;
++      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
++      0 4px 6px -2px rgba(0, 0, 0, 0.05);
++    }
+   .viewer {
+     border-width: 1px;
+     border-color: #000;
+@@ -308,7 +335,7 @@
+     height: 1.25rem;
+     width: 1.25rem;
+     fill: currentColor;
+-    color: #38b2ac;
++    color: #636363;
+   }
+   .disabled {
+     cursor: not-allowed;
+@@ -377,6 +404,29 @@
+       border-right-width: 1px;
+       cursor: pointer;
+     }
++    .previous-next-container {
++      position: fixed;
++      bottom: 0;
++      width: 100%;
++      display: flex;
++      margin-left: auto;
++      margin-right: auto;
++      justify-content: center;
++    }
++    #previous-page {
++      flex: 1;
++      display: block;
++      justify-content: center;
++      margin-right: 50px;
++      margin-bottom: 25px;
++    }
++    #next-page {
++      flex: 2;
++      display: block;
++      justify-content: center;
++      margin-left: 50px;
++      margin-bottom: 25px;
++    }
+     .page-info {
+       display: none;
+     }
+@@ -484,7 +534,7 @@
+     {:else if showButtons === true}
+       <div class="control-start">
+         <div class="line">
+-          <Tooltip>
++          <!-- <Tooltip>
+             <span
+               slot="activator"
+               class="button-control {pageNum <= 1 ? 'disabled' : null}"
+@@ -515,7 +565,7 @@
+               </svg>
+             </span>
+             Next
+-          </Tooltip>
++          </Tooltip> -->
+           <Tooltip>
+             <span
+               slot="activator"
+@@ -552,7 +602,7 @@
+             </span>
+             Zoom Out
+           </Tooltip>
+-          <Tooltip>
++          <!-- <Tooltip>
+             <span
+               slot="activator"
+               class="button-control"
+@@ -567,7 +617,7 @@
+               </svg>
+             </span>
+             Print
+-          </Tooltip>
++          </Tooltip> -->
+           <Tooltip>
+             <span
+               slot="activator"
+@@ -681,9 +731,45 @@
+       </div>
+     {/if}
+   </div>
+-  <button id="topBtn" on:click={() => window.scrollTo(0,0)}>
++  <div class="previous-next-container">
++  <Tooltip>
++    <span
++      slot="activator"
++      class="button-menu {pageNum <= 1 ? 'disabled' : null}"
++      on:click={() => onPrevPage()}>
++      <svg
++        id="previous-page"
++        class="icon"
++        xmlns="http://www.w3.org/2000/svg"
++        viewBox="0 0 20 20">
++        <polygon
++          points="3.828 9 9.899 2.929 8.485 1.515 0 10 .707 10.707 8.485
++          18.485 9.899 17.071 3.828 11 20 11 20 9 3.828 9" />
++      </svg>
++    </span>
++    Prevoius
++  </Tooltip>
++  <Tooltip>
++    <span
++      slot="activator"
++      class="button-menu {pageNum >= totalPage ? 'disabled' : null}"
++      on:click={() => onNextPage()}>
++      <svg
++        id="next-page"
++        class="icon"
++        xmlns="http://www.w3.org/2000/svg"
++        viewBox="0 0 20 20">
++        <polygon
++          points="16.172 9 10.101 2.929 11.515 1.515 20 10 19.293 10.707
++          11.515 18.485 10.101 17.071 16.172 11 0 11 0 9" />
++      </svg>
++    </span>
++    Next
++  </Tooltip>
++  </div>
++  <!-- <button id="topBtn" on:click={() => window.scrollTo(0,0)}>
+       <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+         <path d="M7 10v8h6v-8h5l-8-8-8 8h5z" />
+       </svg>
+-  </button>
++  </button> -->
+ </div>
