@@ -1,8 +1,23 @@
 diff --git a/node_modules/svelte-pdf/src/PdfViewer.svelte b/node_modules/svelte-pdf/src/PdfViewer.svelte
-index 2457edd..17f4d65 100644
+index 2457edd..dd3b279 100644
 --- a/node_modules/svelte-pdf/src/PdfViewer.svelte
 +++ b/node_modules/svelte-pdf/src/PdfViewer.svelte
-@@ -278,7 +278,7 @@
+@@ -264,11 +264,13 @@
+     overflow: auto;
+     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+       0 4px 6px -2px rgba(0, 0, 0, 0.05);
+-    background-color: #fff;
++    background-color: rgb(255, 255, 255);
+     border-width: 1px;
+   }
+   .control-start {
+     padding: 1.25rem;
++    align-items: center;
++    justify-content: center;
+   }
+   .line {
+     display: flex;
+@@ -278,7 +280,7 @@
      border-right-width: 0px;
      border-bottom-width: 1px;
      border-left-width: 0px;
@@ -11,7 +26,7 @@ index 2457edd..17f4d65 100644
      border-style: dotted;
      margin-bottom: 0.75rem;
      padding-top: 0.5rem;
-@@ -299,6 +299,33 @@
+@@ -299,16 +301,46 @@
      border-right-width: 1px;
      cursor: pointer;
    }
@@ -43,9 +58,14 @@ index 2457edd..17f4d65 100644
 +      0 4px 6px -2px rgba(0, 0, 0, 0.05);
 +    }
    .viewer {
++    display: flex;
      border-width: 1px;
      border-color: #000;
-@@ -308,7 +335,7 @@
+     border-style: solid;
++    justify-content: center;
++    align-items: center;
+   }
+   .icon {
      height: 1.25rem;
      width: 1.25rem;
      fill: currentColor;
@@ -54,7 +74,7 @@ index 2457edd..17f4d65 100644
    }
    .disabled {
      cursor: not-allowed;
-@@ -377,6 +404,29 @@
+@@ -377,6 +409,29 @@
        border-right-width: 1px;
        cursor: pointer;
      }
@@ -84,7 +104,7 @@ index 2457edd..17f4d65 100644
      .page-info {
        display: none;
      }
-@@ -484,7 +534,7 @@
+@@ -484,7 +539,7 @@
      {:else if showButtons === true}
        <div class="control-start">
          <div class="line">
@@ -93,7 +113,7 @@ index 2457edd..17f4d65 100644
              <span
                slot="activator"
                class="button-control {pageNum <= 1 ? 'disabled' : null}"
-@@ -515,7 +565,7 @@
+@@ -515,7 +570,7 @@
                </svg>
              </span>
              Next
@@ -102,7 +122,7 @@ index 2457edd..17f4d65 100644
            <Tooltip>
              <span
                slot="activator"
-@@ -552,7 +602,7 @@
+@@ -552,7 +607,7 @@
              </span>
              Zoom Out
            </Tooltip>
@@ -111,7 +131,7 @@ index 2457edd..17f4d65 100644
              <span
                slot="activator"
                class="button-control"
-@@ -567,7 +617,7 @@
+@@ -567,7 +622,7 @@
                </svg>
              </span>
              Print
@@ -120,7 +140,7 @@ index 2457edd..17f4d65 100644
            <Tooltip>
              <span
                slot="activator"
-@@ -681,9 +731,45 @@
+@@ -681,9 +736,45 @@
        </div>
      {/if}
    </div>
