@@ -36,11 +36,7 @@
 				</div> -->
 
 				<!--NETLIFY SUBMITTION Hidden field so form helper can see it-->
-				<form name="test" netlify netlify-honeypot="bot-field" hidden>
-					<input type="text" name="name"/>
-					<input type="email" name="email"/>
-					<textarea name="message"></textarea>
-				</form>
+				<input type="hidden" name="form-name" value="contact">
 
 				<!--Svelte form component-->
 				<form name="contact" method="POST" data-netlify="true">
