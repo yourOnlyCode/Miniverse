@@ -35,7 +35,7 @@
 				</div> -->
 
 				<!--Svelte form component-->
-				<form name="contact" netlify>
+				<!-- <form name="contact" netlify>
 					<p>
 					  <label>Your Name: <input type="text" name="name" /></label>   
 					</p>
@@ -45,7 +45,9 @@
 					<p>
 					  <button type="submit">Send</button>
 					</p>
-				</form>
+				</form> -->
+
+				<a href="https://forms.gle/VPKkh41koqduevZW8">Click Here</a>
 
 			</div>
 			</div>
