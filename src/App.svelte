@@ -36,8 +36,12 @@
 					<button type="submit" class="signupbtn">Sign Up</button>
 				</div> -->
 
-				<!--NETLIFY SUBMITTION Hidden field so form helper can see it-->
-				<input type="hidden" name="contact" value="contact" />
+				<!-- "/static/netlify-form-helper.html" -->
+				<form name="test" netlify netlify-honeypot="bot-field" hidden>
+					<input type="text" name="name" />
+					<input type="email" name="email" />
+					<select name="role[]"></select>
+				</form>
 
 				<!--Svelte form component-->
 				<form name="contact" method="POST" action="POST" data-netlify="true">
