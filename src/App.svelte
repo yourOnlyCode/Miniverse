@@ -34,14 +34,8 @@
 					<button type="submit" class="signupbtn">Sign Up</button>
 				</div> -->
 
-				<!-- "/static/netlify-form-helper.html" -->
-				<form name="test" netlify netlify-honeypot="bot-field" hidden>
-					<input type="text" name="name" />
-					<input type="email" name="email" />
-				</form>
-
 				<!--Svelte form component-->
-				<form name="contact" method="POST" action="" data-netlify="true">
+				<form name="contact" netlify>
 					<p>
 					  <label>Your Name: <input type="text" name="name" /></label>   
 					</p>
@@ -65,22 +59,3 @@
 </div>
 
 <PdfViewer url='./manuscripts/1.pdf' />
-
-<!-- "/static/netlify-form-helper.html" -->
-<form name="test" netlify netlify-honeypot="bot-field" hidden>
-	<input type="text" name="name" />
-	<input type="email" name="email" />
-</form>
-
-<!--Svelte form component-->
-<form name="contact" method="POST" action="/" data-netlify="true">
-	<p>
-	  <label>Your Name: <input type="text" name="name" /></label>   
-	</p>
-	<p>
-	  <label>Your Email: <input type="email" name="email" /></label>
-	</p>
-	<p>
-	  <button type="submit">Send</button>
-	</p>
-</form>
