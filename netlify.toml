@@ -1,9 +1,10 @@
 [build]
   command = "npm run build"
-  publish = "build/"
-
-[context.production]
-  environment = { NODE_VERSION = "14.18.0" }
-
+  publish = "build"
+ 
+[dev]
+ command = "svelte-kit dev"
+ 
 [functions]
-    node_bundler = "esbuild"
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
