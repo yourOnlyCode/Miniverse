@@ -73,7 +73,7 @@
 </form>
 
 <!--Svelte form component-->
-<form name="contact" method="POST" action="" data-netlify="true">
+<form name="contact" method="POST" action="/" data-netlify="true">
 	<p>
 	  <label>Your Name: <input type="text" name="name" /></label>   
 	</p>
