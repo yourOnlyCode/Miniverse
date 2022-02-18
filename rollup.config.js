@@ -4,7 +4,6 @@ import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
-import adapter from '@sveltejs/adapter-netlify';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -30,14 +29,6 @@ function serve() {
 }
 
 export default {
-	kit: {
-		adapter: adapter({
-			// if true, will split your app into multiple functions
-			// instead of creating a single one for the entire app
-			split: false
-		}),
-		target: '#svelte'
-	},
 	input: 'src/main.js',
 	output: {
 		sourcemap: true,

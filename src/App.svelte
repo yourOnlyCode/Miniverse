@@ -1,13 +1,9 @@
+<script context="module">
 
-<script>
+	export const prerender = true
+
 	import PdfViewer from 'svelte-pdf';
 	let title = 'MINIVERSE'
-
-	function openPopup() {
-		window.location.hash = 'openModal';
-	}
-
-	window.onLoad = openPopup;
 
 </script>
 
@@ -43,7 +39,7 @@
 				</form>
 
 				<!--Svelte form component-->
-				<form name="contact" method="POST" action="POST" data-netlify="true">
+				<form name="contact" method="POST" data-netlify="true">
 					<p>
 					  <label>Your Name: <input type="text" name="name" /></label>   
 					</p>
