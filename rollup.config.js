@@ -7,14 +7,6 @@ import css from 'rollup-plugin-css-only';
 
 const production = !process.env.ROLLUP_WATCH;
 
-// const adapter = require('@sveltejs/adapter-netlify');
-// module.exports = {
-// 	kit: {
-// 		adapter: adapter(),
-// 		target: "#svelte"
-// 	}
-// }
-
 function serve() {
 	let server;
 

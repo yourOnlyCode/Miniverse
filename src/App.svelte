@@ -8,6 +8,7 @@
 	}
 
 	window.onLoad = openPopup;
+
 </script>
 
 <div class="header-container">
@@ -36,10 +37,10 @@
 				</div> -->
 
 				<!--NETLIFY SUBMITTION Hidden field so form helper can see it-->
-				<input type="hidden" name="contact" value="contact">
+				<input type="hidden" name="contact" value="contact" />
 
 				<!--Svelte form component-->
-				<form name="contact" method="POST" data-netlify="true">
+				<form name="contact" method="POST" action="POST" data-netlify="true">
 					<p>
 					  <label>Your Name: <input type="text" name="name" /></label>   
 					</p>
@@ -48,13 +49,12 @@
 					</p>
 					<p>
 					  <label>Your Role: <select name="role[]" multiple>
-						<option value="leader">Leader</option>
-						<option value="follower">Follower</option>
+						<option value="Artist">Artist</option>
+						<option value="General">General Interest</option>
+						<option value="Investor">Investor</option>
 					  </select></label>
 					</p>
-					<p>
-					  <label>Message: <textarea name="message"></textarea></label>
-					</p>
+					<div data-netlify-recaptcha="true"></div>
 					<p>
 					  <button type="submit">Send</button>
 					</p>
@@ -64,6 +64,7 @@
 			</div>
 		</h2>
 	</div>
+
 </div>	
 
 <div class="box-container">
