@@ -71,6 +71,7 @@ div.header-container {
 	margin-right: auto;
 	justify-content: left;
 	border-bottom: 1px dotted black;
+	width: 100%;
 }
 
 div.logo-container {
@@ -79,6 +80,7 @@ div.logo-container {
 }
 
 div.title-container {
+	width: 100%;
 	margin-top: 10px;
 	margin-left: -25px;
 }
@@ -91,6 +93,7 @@ div.title-container {
 }
 
 .disclaimer-container {
+	background-color: red;
 	width: 100%;
 	display: flex;
 	justify-content: right;
@@ -113,6 +116,7 @@ img.logo {
 	border: 2.5px solid black;
 	border-radius: 5px;
 	padding: 5px;
+	justify-content: right;
 }
 
 .box-container {
