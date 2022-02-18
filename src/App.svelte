@@ -1,3 +1,5 @@
+
+
 <script context="module">
 
 	export const prerender = true
@@ -18,7 +20,7 @@
 
 	<div class="disclaimer-container">
 		<h2 class="disclaimer">
-			<a href="#openModal">LOGIN</a>
+			<a>LOGIN</a>
 			<div id="openModal" class="modalDialog">
 			<div class="popup-container">
 				<a href="#close" style="color:black" title="Close" class="close">X</a>
