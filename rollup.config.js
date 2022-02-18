@@ -31,11 +31,8 @@ function serve() {
 
 export default {
 	kit: {
-		adapter: adapter({
-			// if true, will split your app into multiple functions
-			// instead of creating a single one for the entire app
-			split: false
-		})
+		adapter: adapter(),
+		target: '#svelte'
 	},
 	input: 'src/main.js',
 	output: {
