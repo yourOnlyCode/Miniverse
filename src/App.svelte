@@ -20,7 +20,7 @@
 
 	<div class="disclaimer-container">
 		<h2 class="disclaimer">
-			<a>LOGIN</a>
+			<a href="#openModal">LOGIN</a>
 			<div id="openModal" class="modalDialog">
 			<div class="popup-container">
 				<a href="#close" style="color:black" title="Close" class="close">X</a>
@@ -41,7 +41,7 @@
 				</form>
 
 				<!--Svelte form component-->
-				<form name="contact" method="POST" data-netlify="true">
+				<form name="contact" method="POST" action="" data-netlify="true">
 					<p>
 					  <label>Your Name: <input type="text" name="name" /></label>   
 					</p>
