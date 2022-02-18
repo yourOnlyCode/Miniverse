@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "prepare": "patch-package",
     "postinstall": "patch-package",
     "build": "rollup -c",
     "dev": "rollup -c -w",
