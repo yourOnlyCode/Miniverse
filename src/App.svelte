@@ -40,7 +40,6 @@
 				<form name="test" netlify netlify-honeypot="bot-field" hidden>
 					<input type="text" name="name" />
 					<input type="email" name="email" />
-					<select name="role[]"></select>
 				</form>
 
 				<!--Svelte form component-->
@@ -51,14 +50,6 @@
 					<p>
 					  <label>Your Email: <input type="email" name="email" /></label>
 					</p>
-					<p>
-					  <label>Your Role: <select name="role[]" multiple>
-						<option value="Artist">Artist</option>
-						<option value="General">General Interest</option>
-						<option value="Investor">Investor</option>
-					  </select></label>
-					</p>
-					<div data-netlify-recaptcha="true"></div>
 					<p>
 					  <button type="submit">Send</button>
 					</p>

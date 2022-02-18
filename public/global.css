@@ -151,7 +151,7 @@ img.logo {
 	pointer-events: auto;
   }
   .modalDialog > div {
-	width: 400px;
+	width: 66%;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
