@@ -1,5 +1,5 @@
 diff --git a/node_modules/svelte-pdf/src/PdfViewer.svelte b/node_modules/svelte-pdf/src/PdfViewer.svelte
-index 2457edd..fdc372c 100644
+index 2457edd..6dfd226 100644
 --- a/node_modules/svelte-pdf/src/PdfViewer.svelte
 +++ b/node_modules/svelte-pdf/src/PdfViewer.svelte
 @@ -264,11 +264,13 @@
@@ -17,12 +17,9 @@ index 2457edd..fdc372c 100644
    }
    .line {
      display: flex;
-@@ -276,9 +278,9 @@
-     font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-     border-top-width: 0px;
+@@ -278,7 +280,7 @@
      border-right-width: 0px;
--    border-bottom-width: 1px;
-+    border-bottom-width: .9px;
+     border-bottom-width: 1px;
      border-left-width: 0px;
 -    border-color: #4fd1c5;
 +    border-color: #000000;
