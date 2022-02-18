@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 html, body {
 	position: relative;
 	width: 100%;
@@ -66,12 +69,13 @@ div.header-container {
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	justify-content: center;
+	justify-content: left;
+	border-bottom: 1px dotted black;
 }
 
 div.logo-container {
 	margin-right: 20px;
-	margin-left: -15px;
+	margin-left: 20px;
 }
 
 div.title-container {
@@ -82,9 +86,40 @@ div.title-container {
 .title-container h1 {
 	font-weight: normal;
 	color:rgb(59, 59, 59);
+	margin-top: -.5px;
+	margin-left: 5px;
+}
+
+.disclaimer-container {
+	width: 100%;
+	display: flex;
+	justify-content: right;
+	font-size: 8px;
+	font-weight: lighter;
 }
 
 img.logo {
-	height: 80px;
-	width: 80px;
+	height: 40px;
+	width: 40px;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.disclaimer {
+	font-family: 'VT323', monospace;
+	border: 2.5px solid black;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.box-container {
+	font-family: 'VT323', monospace;
+	display: flex;
+	justify-content: center;
+	font-size: 25px;
+	margin-left: 25px;
+	margin-bottom: -15px;
 }

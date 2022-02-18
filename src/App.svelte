@@ -1,5 +1,6 @@
 
 
+
 <script>
 	import PdfViewer from 'svelte-pdf';
 	let title = 'MINIVERSE'
@@ -13,6 +14,14 @@
 	<div class="title-container">
 		<h1 class="title">{title}</h1>
 	</div>
+
+	<div class="disclaimer-container">
+		<h2 class="disclaimer">public login unavailable</h2>
+	</div>
 </div>	
+
+<div class="box-container">
+	<h3 class="box">MATTY's BOX</h3>
+</div>
 
 <PdfViewer url='./manuscripts/1.pdf' />
