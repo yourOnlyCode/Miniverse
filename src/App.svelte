@@ -36,7 +36,7 @@
 				</div> -->
 
 				<!--NETLIFY SUBMITTION Hidden field so form helper can see it-->
-				<input type="hidden" name="form-name" value="contact">
+				<input type="hidden" name="contact" value="contact">
 
 				<!--Svelte form component-->
 				<form name="contact" method="POST" data-netlify="true">
