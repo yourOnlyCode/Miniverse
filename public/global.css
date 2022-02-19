@@ -67,6 +67,7 @@ button:focus {
 
 div.header-container {
 	display: flex;
+	flex-direction: row;
 	margin-left: auto;
 	margin-right: auto;
 	justify-content: left;
@@ -93,11 +94,18 @@ div.title-container {
 }
 
 .disclaimer-container {
-	width: 100%;
 	display: flex;
 	justify-content: right;
 	font-size: 8px;
 	font-weight: lighter;
+}
+
+.disclaimer {
+	font-family: 'VT323', monospace;
+	border: 2.5px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	justify-content: right;
 }
 
 img.logo {
@@ -108,14 +116,6 @@ img.logo {
 .title {
 	font-size: 20px;
 	font-weight: normal;
-}
-
-.disclaimer {
-	font-family: 'VT323', monospace;
-	border: 2.5px solid black;
-	border-radius: 5px;
-	padding: 5px;
-	justify-content: right;
 }
 
 .box-container {
