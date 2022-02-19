@@ -106,6 +106,8 @@ div.title-container {
 	border-radius: 5px;
 	padding: 5px;
 	justify-content: right;
+
+	
 }
 
 img.logo {
@@ -191,4 +193,6 @@ img.logo {
 	  text-align: center;
 	  font-size: 25px;
 	  text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255);
+  }
+
   }
