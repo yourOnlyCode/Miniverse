@@ -141,6 +141,11 @@ h2.kickstarter-text {
 	padding: 15px;
 }
 
+.home-container {
+	text-align: center;
+	font-family: 'VT323', monospace;
+	font-size: 50px;
+}
 
 
 .modalDialog {

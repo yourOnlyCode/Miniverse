@@ -5,7 +5,7 @@
 </script>
 
 <Router routes={{
-	'/Home': Home,
+	'/': Home,
 	'/Mattysbox': Mattysbox
 }} />
 
