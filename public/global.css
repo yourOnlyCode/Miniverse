@@ -132,13 +132,9 @@ img.logo {
 
 .kickstarter-container {
 	text-align: center;
-	padding: 50px;
+	padding: 25px;
 	font-family: 'VT323', monospace;
 	font-size: large;
-}
-
-h2.kickstarter-text {
-	padding: 15px;
 }
 
 .home-container {
