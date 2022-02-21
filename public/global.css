@@ -130,8 +130,16 @@ img.logo {
 }
 
 
+.kickstarter-container {
+	text-align: center;
+	padding: 50px;
+	font-family: 'VT323', monospace;
+	font-size: large;
+}
 
-
+h2.kickstarter-text {
+	padding: 15px;
+}
 
 
 
@@ -195,4 +203,3 @@ img.logo {
 	  text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255);
   }
 
-  }

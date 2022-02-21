@@ -63,3 +63,9 @@
 </div>
 
 <PdfViewer url='./manuscripts/1.pdf' />
+
+<div class="kickstarter-container">
+	<hr>
+	<h2 class="kickstarter-text">Support Mobile Mercury Video Game for PC on <a href="https://www.kickstarter.com/projects/olatheheights/mobile-mercury">Kickstarter!</a></h2>
+
+</div>
