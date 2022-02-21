@@ -22,10 +22,10 @@
 
 	<div class="disclaimer-container">
 		<h2 class="disclaimer">
-			<a href="#openModal">LOGIN</a>
-			<div id="openModal" class="modalDialog">
+			<a href="#/mattysBox">LOGIN</a>
+			<div id="/mattysBox" class="modalDialog">
 			<div class="popup-container">
-				<a href="#close" style="color:black" title="Close" class="close">X</a>
+				<a href="#/mattysbox" style="color:black" title="Close" class="close">X</a>
 				<p style="color:black">Login not yet available for public.</p>
 				<p style="color:black">Get notified for public launch:</p>
 
